@@ -21,7 +21,7 @@ func applyHTTP2Middlewares(handler http.Handler, middlewares ...HTTP2Middleware)
 }
 
 type HTTPServerConfig struct {
-	ServerAddress string `env:"HTTP_SERVER_ADDRESS" envDefault:"0.0.0.0:9440"`
+	ServerAddress string `env:"SERVER_ADDRESS" envDefault:"0.0.0.0:9440"`
 
 	EnableTLS   bool   `env:"ENABLE_TLS" envDefault:"false"`
 	TLSCertFile string `env:"TLS_CERT_FILE" envDefault:"server.crt"`
